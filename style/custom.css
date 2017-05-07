@@ -4,5 +4,5 @@ body {
 
 .topnav {
   background-color: black;
-  overflow: hidden;
+  width: 500px;
 }
