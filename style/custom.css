@@ -5,7 +5,6 @@ body {
 .topnav {
   background-color: #333;
   width: 500px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
