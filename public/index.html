@@ -1,4 +1,195 @@
-<!DOCTYPE html><html>  <head>    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1">    <title>JS Bin</title>    <style>      *{      padding: 0px;      margin: 0px;      }      body{      width: 100%;      height: 100%;      background-color: #478;      }      .row{      width: 100%;      height: 100%;      text-align: center;      box-sizing: border-box;      }      .column {      float: left;      }      .left, .right {
-      width: 25%;      }      .middle {      width: 50%;      }      .row:after {      content: "";      display: table;      clear: both;      }    </style>    <script>      function displayDateTime() {        var today = new Date();        var year = today.getFullYear();        var month = today.getMonth()+1;        var date = today.getDate();
-        date = month + '/' + date + '/' + year;        document.getElementById('date').innerHTML = "Date: " + date;
-        var h = today.getHours();        var m = today.getMinutes();        var s = today.getSeconds();        m = checkTime(m);        s = checkTime(s);        var time = h + ":" + m + ":" + s;        document.getElementById('time').innerHTML = "Time: " + time;        var t = setTimeout(displayDateTime, 500);      }      function checkTime(i) {        if (i < 10) {          i = "0" + i;        }        return i;      }    </script>  </head>  <body onload="displayDateTime()">    <div class="row">      <div class="column left" style="background-color: #aaa;">        <div id="date"></div>      </div>      <div class="column middle" style="background-color: #478;">        Title      </div>      <div class="column right" style="background-color: #aaa;">        <div id="time"></div>      </div>    </div>  </body></html>
+
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta
+charset="utf-8">
+
+    <meta
+name="viewport" content="width=device-width,
+initial-scale=1">
+
+    <title>JS
+Bin</title>
+
+    <style>
+
+      *{
+
+      padding: 0px;
+
+      margin: 0px;
+
+      }
+
+      body{
+
+      width: 100%;
+
+      height: 100%;
+
+     
+background-color: #478;
+
+      }
+
+      .row{
+
+      width: 100%;
+
+      height: 100%;
+
+      text-align:
+center;
+
+      box-sizing:
+border-box;
+
+      }
+
+      .column {
+
+      float: left;
+
+      }
+
+      .left, .right
+{
+
+ 
+
+      width: 25%;
+
+      }
+
+      .middle {
+
+      width: 50%;
+
+      }
+
+      .row:after {
+
+      content:
+"";
+
+      display:
+table;
+
+      clear: both;
+
+      }
+
+    </style>
+
+    <script>
+
+      function
+displayDateTime() {
+
+        var today =
+new Date();
+
+        var year =
+today.getFullYear();
+
+        var month =
+today.getMonth()+1;
+
+        var date =
+today.getDate();
+
+ 
+
+        date =
+month + '/' + date + '/' + year;
+
+       
+document.getElementById('date').innerHTML = "Date: " + date;
+
+ 
+
+        var h =
+today.getHours();
+
+        var m =
+today.getMinutes();
+
+        var s =
+today.getSeconds();
+
+        m =
+checkTime(m);
+
+        s =
+checkTime(s);
+
+        var time =
+h + ":" + m + ":" + s;
+
+       
+document.getElementById('time').innerHTML = "Time: " + time;
+
+        var t =
+setTimeout(displayDateTime, 500);
+
+      }
+
+      function
+checkTime(i) {
+
+        if (i <
+10) {
+
+          i =
+"0" + i;
+
+        }
+
+        return i;
+
+      }
+
+    </script>
+
+  </head>
+
+  <body
+onload="displayDateTime()">
+
+    <div
+class="row">
+
+      <div
+class="column left" style="background-color: #aaa;">
+
+        <div
+id="date"></div>
+
+      </div>
+
+      <div
+class="column middle" style="background-color: #478;">
+
+        Title
+
+      </div>
+
+      <div
+class="column right" style="background-color: #aaa;">
+
+        <div
+id="time"></div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
+
